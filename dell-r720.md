@@ -39,17 +39,17 @@ iDRAC is the Dell Integrated Dell Remote Access Controller.
 
 有几个需要注意的地方：
 
-1. **「New Virtual Machine」 -> 「Customize settings」-> 「Boot Options」** 将 Firmware 的模式从 *BIOS* 改到 ***UEFI***，否则在系统中无法识别到 GPU。
-2. 在内存选项中选择 Memory - Check All guest memory (All locked)「预留所有内存」，否则会遇到 **Failed - Invalid memory setting: memory reservation (sched.mem.min) should be equal to memsize(16384).**
-3. 在 VM Options 的 Advanced 中添加以下配置，否则会遇到 **Failed - Module 'DevicePowerOn' power on failed.**
+1. *「New Virtual Machine」 -> 「Customize settings」-> 「Boot Options」* 将 Firmware 的模式从 *BIOS* 改到 ***UEFI***，否则在系统中无法识别到 GPU。
+2. 在内存选项中选择 Memory - Check All guest memory (All locked)「预留所有内存」，否则会遇到 *Failed - Invalid memory setting: memory reservation (sched.mem.min) should be equal to memsize(16384).*
+3. 在 VM Options 的 Advanced 中添加以下配置，否则会遇到 *Failed - Module 'DevicePowerOn' power on failed.*
 
 ![](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/727f63e968ad40bc8859ae1f6e7154fb~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp?)
 ![](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ed30afa6a3ea456698b62b6f0c3dda84~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp?)
 
 ```ini
+hypervisor.cpuid.v0=FALSE
 pciPassthru.use64bitMMIO=TRUE
 pciPassthru.64bitMMIOSizeGB=64
-hypervisor.cpuid.v0=FALSE
 ```
 
 ```shell
@@ -82,6 +82,10 @@ EOF
 
 <https://askubuntu.com/questions/841876/how-to-disable-nouveau-kernel-driver>
 
+```shell
+lspci | grep -i nvidia
+```
+
 ### CUDA Toolkit
 
 <https://developer.nvidia.com/cuda-downloads>
@@ -91,14 +95,9 @@ wget https://developer.download.nvidia.com/compute/cuda/12.3.1/local_installers/
 ./cuda_12.3.1_545.23.08_linux.run
 ```
 
-```shell
-lspci | grep -i nvidia
-```
-
 安装完成后运行 `nvidia-smi` 检查是否安装成功 以及 CUDA 版本
 
-
-## Ref
+## Refs
 
 + <https://juejin.cn/post/7248072694335799333>
 
