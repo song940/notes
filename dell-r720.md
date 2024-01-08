@@ -40,17 +40,19 @@ iDRAC is the Dell Integrated Dell Remote Access Controller.
 有几个需要注意的地方：
 
 1. *「New Virtual Machine」 -> 「Customize settings」-> 「Boot Options」* 将 Firmware 的模式从 *BIOS* 改到 ***UEFI***，否则在系统中无法识别到 GPU。
-2. 在内存选项中选择 Memory - Check All guest memory (All locked)「预留所有内存」，否则会遇到 *Failed - Invalid memory setting: memory reservation (sched.mem.min) should be equal to memsize(16384).*
-3. 在 VM Options 的 Advanced 中添加以下配置，否则会遇到 *Failed - Module 'DevicePowerOn' power on failed.*
+2. 在内存选项中选择 *Memory - Check All guest memory (All locked)*「预留所有内存」，否则会遇到 *Failed - Invalid memory setting: memory reservation (sched.mem.min) should be equal to memsize(16384).*
+3. 在「VM Options」的「Advanced」中添加以下配置，否则会遇到 *Failed - Module 'DevicePowerOn' power on failed.*
 
-![](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/727f63e968ad40bc8859ae1f6e7154fb~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp?)
-![](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ed30afa6a3ea456698b62b6f0c3dda84~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp?)
+    ![](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/727f63e968ad40bc8859ae1f6e7154fb~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp?)
+    ![](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ed30afa6a3ea456698b62b6f0c3dda84~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp?)
 
-```ini
-hypervisor.cpuid.v0=FALSE
-pciPassthru.use64bitMMIO=TRUE
-pciPassthru.64bitMMIOSizeGB=64
-```
+    ```ini
+    hypervisor.cpuid.v0=FALSE
+    pciPassthru.use64bitMMIO=TRUE
+    pciPassthru.64bitMMIOSizeGB=64
+    ```
+
+解决掉前置条件后，我们就可以在虚拟机中使用 GPU 了。
 
 ```shell
 apt-get update
@@ -100,13 +102,3 @@ wget https://developer.download.nvidia.com/compute/cuda/12.3.1/local_installers/
 ## Refs
 
 + <https://juejin.cn/post/7248072694335799333>
-
-### Q&A: NAS 还是服务器？
-
-群晖是计算机、路由器是计算机、服务器也是，只是他们的用途不一样，所以在硬件配置方面的取舍会有区别。
-
-如果你只是想上个网当然买个现成的路由器就行了，如果你想要搞一些复杂的网络配置，就需要自己搭建性能强劲的软路由系统。
-
-同理，如果你只是想存个文件方便远程访问，群晖就够了。
-
-但是如果你的需求会比较多，我想搭建 Kubernates(k8s)、VM 虚拟化、MediaServer 媒体服务器、Web Server、Database Server 或者你对性能和硬盘空间有要求，消费级的路由器或者 NAS 肯定不够用了，那么你需要服务器。
