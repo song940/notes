@@ -56,3 +56,16 @@ tmpfs                   512.0K         0    512.0K   0% /dev
 至此，系统扩容工作已经完成了。
 
 for more information, please refer to <https://openwrt.org/docs/guide-user/installation/installation_methods/sd_card>
+
+## Firewall
+
+*Firewall - Traffic Rules*
+
++ **Name**: *Allow HTTP*
++ **Protocol**: *TCP | UDP*
++ **Source zone**: *wan*
++ **Source address**: *-- add IP --*
++ **Source port**: *any*
++ **Destination zone**: *Device (input)*
++ **Destination address**: *-- add IP --*
++ **Destination port**: *8888*

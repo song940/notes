@@ -6,6 +6,14 @@ parent: Linux
 
 # Debian
 
+## APT Source
+
+For example ustc https://mirrors.ustc.edu.cn/help/debian.html
+
+```shell
+sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
+```
+
 /etc/apt/sources.list
 
 ```
