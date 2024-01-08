@@ -119,6 +119,11 @@ ADB，即 [Android Debug Bridge](https://developer.android.com/studio/command-li
 
 ## 基本用法
 
+```shell
+apt install android-tools-adb
+apt install android-tools-fastboot
+```
+
 ### 命令语法
 
 adb 命令的基本语法如下：
