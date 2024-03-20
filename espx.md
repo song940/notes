@@ -150,3 +150,12 @@ void relay_close() {
 ### ESP_IR_TR
 
 ![](https://ae01.alicdn.com/kf/S7c37a1d55ab545909dca7446ff60997cZ/ESP8285-ESP-01M-IR-Transceiver-Wifi-Wireless-Module-Remote-Control-Switch-Development-Learning-Board-esp-8285.jpg_Q90.jpg_.webp)
+
+## esptools.py
+
+
+```shell
+esptool.py --port /dev/cu.usbserial-7152051CB6 write_flash 0x10000 ~/Downloads/m5stick-c-20240317.bin
+```
+
+<https://lsong.org/webesp>
