@@ -159,3 +159,5 @@ esptool.py --port /dev/cu.usbserial-7152051CB6 write_flash 0x10000 ~/Downloads/m
 ```
 
 <https://lsong.org/webesp>
+
+<https://docs.espressif.com/projects/esptool/en/latest/esp8266/esptool/basic-commands.html>
