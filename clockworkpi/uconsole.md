@@ -148,7 +148,7 @@ wget https://github.com/clockworkpi/uConsole/blob/master/Bin/uconsole.kbd.0.4_48
 apt install lightdm -y
 ```
 
-然后参考 [systemd#targets](systemd#targets) 的部分来修改启动目标，设置为 `graphical.target` 图形启动目标：
+然后参考 [systemd#targets](../systemd#targets) 的部分来修改启动目标，设置为 `graphical.target` 图形启动目标：
 
 ```bash
 systemctl set-default graphical.target
@@ -156,4 +156,4 @@ systemctl set-default graphical.target
 
 然后删除掉 `x11-autologin.service` ，重新启动就会启动到 lightdm 了。
 
-详细参考 [lightdm](lightdm) 的部分。
+详细参考 [lightdm](../lightdm) 的部分。

@@ -33,3 +33,13 @@ greeter-session=lightdm-greeter
 - greeter-hide-users=true
 session-wrapper=/etc/X11/Xsession
 ```
+
+### Autologin
+
+sudo nano /etc/lightdm/lightdm.conf.d/autologin.conf
+
+```ini
+[Seat:*]
+autologin-user=<USERNAME>
+autologin-user-timeout=10
+```

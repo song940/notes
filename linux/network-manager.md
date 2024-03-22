@@ -25,3 +25,13 @@ Enable NetworkManager:
 ~$ nmcli
 ~$ nmtui
 ```
+
+### WiFi Menu
+
+```shell
+apt install netctl
+```
+
+```shell
+wifi-menu
+```
