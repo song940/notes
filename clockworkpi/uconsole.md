@@ -58,7 +58,7 @@ adduser lsong
 usermod -a lsong -G sudo # 添加到 sudoers，允许使用 sudo
 ```
 
-uConsole OS 里面装了 `lightdm` 但是桌面是通过 `x11-autologin.service` 这个服务启动的 (后面我会修正这个问题)，所以为了能够使用我们新建的用户启动桌面，我们需要修改 `x11-autologin.service` 的配置。
+uConsole OS 里面桌面是通过 `x11-autologin.service` 这个服务启动桌面的 (后面我会修正这个问题)，所以为了能够使用我们新建的用户启动桌面，我们需要修改 `x11-autologin.service` 的配置。
 
 ```patch
 [Unit]
@@ -139,3 +139,21 @@ wget https://github.com/clockworkpi/uConsole/blob/master/Bin/uconsole.kbd.0.4_48
 ```
 
 按住 <kbd>Fn</kbd> 然后滚动轨迹球就可以翻页了。
+
+## LightDM
+
+前面我们说到 uConsole OS 里面桌面是通过 `x11-autologin.service` 这个服务启动桌面的，这里我们把它修改为 `lightdm`。
+
+```shell
+apt install lightdm -y
+```
+
+然后参考 [systemd#targets](systemd#targets) 的部分来修改启动目标，设置为 `graphical.target` 图形启动目标：
+
+```bash
+systemctl set-default graphical.target
+```
+
+然后删除掉 `x11-autologin.service` ，重新启动就会启动到 lightdm 了。
+
+详细参考 [lightdm](lightdm) 的部分。
