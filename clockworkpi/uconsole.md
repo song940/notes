@@ -38,6 +38,19 @@ dd if=uConsole_CM4_v0.1b_xfce_64bit.img of=/dev/mmcblk0 status=progress
 
 进入系统后先设置一下 RPI Configuration
 
+更新软件源
+
+```shell
+apt update
+apt upgrade -y
+```
+
+安装中文字体
+
+```shell
+apt install fonts-noto-cjk -y
+```
+
 接下来我们开始创建一个自己的用户:
 
 ```shell
@@ -79,7 +92,7 @@ WantedBy=graphical.target
 
 ## Screen
 
-cpi 用户是通过在 ~/.xinitrc 中 xrandr 设置的:
+cpi 用户是通过在 `~/.xinitrc` 中 xrandr 设置的:
 
 ```shell
 xrandr --output DSI-1 --rotate right
@@ -100,8 +113,6 @@ xrandr --output DSI-1 --rotate right
 
 ## Keyboard
 
-https://github.com/clockworkpi/uConsole/tree/master/Code/uconsole_keyboard
-
 下载 uConsole 的 [Keyboard Flash Tool](https://github.com/clockworkpi/uConsole/raw/master/Bin/uconsole_keyboard_flash.tar.gz)
 
 ```shell
@@ -115,7 +126,7 @@ tar xzvf uconsole_keyboard_flash.tar.gz
 ~# apt install dfu-util
 ```
 
-下载 Keyboard Firmware <https://github.com/clockworkpi/uConsole/tree/master/Bin>
+下载 [Keyboard Firmware](https://github.com/clockworkpi/uConsole/tree/master/Bin)
 
 ```shell
 wget https://github.com/clockworkpi/uConsole/blob/master/Bin/uconsole.kbd.0.4_48mhz.bin
@@ -128,4 +139,3 @@ wget https://github.com/clockworkpi/uConsole/blob/master/Bin/uconsole.kbd.0.4_48
 ```
 
 按住 <kbd>Fn</kbd> 然后滚动轨迹球就可以翻页了。
-

@@ -5,3 +5,5 @@ parent: Linux
 ---
 
 # Disk
+
++ [fdisk](../fdisk)

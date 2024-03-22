@@ -131,9 +131,11 @@ Install the appropriate driver, e.g., for Intel:
 
 For other graphic cards, refer to: [ArchWiki Xorg Driver Installation](https://wiki.archlinux.org/index.php/Xorg#Driver_installation)
 
-### Desktop Environments and Window Managers
+### Desktop Environments
 
-Choose a desktop environment or a window manager as per your needs.
++ [LightDM](linux/lightdm)
+
+### Window Managers
 
 **XFCE**:
 
@@ -148,7 +150,7 @@ Choose a desktop environment or a window manager as per your needs.
 ~# pacman -S i3-wm i3status i3lock
 ```
 
-**bspwm**:
+[bspwm](bspwm):
 
 ```shell
 ~# pacman -S bspwm
@@ -197,5 +199,3 @@ Fonts:
 ```
 
 ---
-
-这个指南提供了基本的 Archlinux 安装和配置步骤，确保在实际操作之前对每一步都有深入的了解，特别是在对硬盘进行分区和格式化时。
