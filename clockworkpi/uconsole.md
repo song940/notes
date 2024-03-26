@@ -157,3 +157,23 @@ systemctl set-default graphical.target
 然后删除掉 `x11-autologin.service` ，重新启动就会启动到 lightdm 了。
 
 详细参考 [lightdm](../lightdm) 的部分。
+
+## Battery
+
+The default charging speed of the uConsole is way too slow. Run this to fixt hat:
+
+```shell
+echo 'KERNEL=="axp20x-battery", ATTR{constant_charge_current_max}="2200000", ATTR{constant_charge_current}="2000000"' | sudo tee /etc/udev/rules.d/99-uconsole-charging.rules
+```
+
+## Bluetooth
+
+```shell
+apt install blueman
+```
+
+## IME
+
+```shell
+apt install fcitx5 fcitx5-rime
+```
