@@ -1,6 +1,7 @@
 ---
 layout: default
 title: LightDM
+parent: Linux
 ---
 
 # LightDM

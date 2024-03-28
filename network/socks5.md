@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Socks5
+parent: Network
 ---
 
 # SOCKS5 协议介绍

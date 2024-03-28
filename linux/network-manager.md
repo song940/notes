@@ -1,6 +1,7 @@
 ---
 layout: default
 title: NetworkManager
+parent: Linux
 ---
 
 # NetworkManager

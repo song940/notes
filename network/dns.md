@@ -1,6 +1,7 @@
 ---
 title: DNS
 layout: default
+parent: Linux
 ---
 
 # DNS

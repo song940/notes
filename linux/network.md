@@ -1,3 +1,8 @@
+---
+layout: default
+title: Linux Network
+parent: Linux
+---
 
 # Network
 

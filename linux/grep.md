@@ -4,7 +4,6 @@ title: grep
 parent: Linux
 ---
 
-
 # grep
 
 grep is command-line util for matching lines of text against a pattern of characters or regular expressions in a file.

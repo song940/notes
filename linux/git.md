@@ -6,9 +6,9 @@ parent: Linux
 
 # Git
 
-## Getting Started
-
 git is a version control system for tracking changes in source code during software development processes.
+
+## Getting Started
 
 ### Create a Repository
 

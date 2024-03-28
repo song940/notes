@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Shadowsocks
+parent: Network
 ---
 
 # Shadowsocks

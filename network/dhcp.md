@@ -1,6 +1,7 @@
 ---
 layout: default
 title: DHCP
+parent: Network
 ---
 
 # DHCP

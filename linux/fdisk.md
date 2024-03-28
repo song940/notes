@@ -1,7 +1,7 @@
 ---
+layout: default
 title: fdisk
 parent: Linux
-layout: default
 ---
 
 # fdisk

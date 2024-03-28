@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Rclone
+parent: Linux
 ---
 
 # Rclone

@@ -1,7 +1,7 @@
 ---
+layout: default
 title: X Window System
 parent: Linux
-layout: default
 nav_order: 3
 ---
 
