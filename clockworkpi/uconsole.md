@@ -114,7 +114,7 @@ EndSection
 `/etc/X11/Xresources/x11-dpi`
 
 ```
-Xft: 144
+Xft.dpi: 144
 ```
 
 ## Keyboard
