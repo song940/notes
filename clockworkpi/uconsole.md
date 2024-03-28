@@ -13,8 +13,6 @@ Clockwork Pi uConsole 可以选择不同的核心板
 + A06
 + R01
 
-## 
-
 ## Install
 
 我选择的 CM4 版本有两个系统，分别是基于 LXDE 和 XFCE
@@ -113,7 +111,7 @@ EndSection
 
 这样就可以在 X11 层面设置屏幕方向了，对所有用户都生效，而无需单独配置。
 
-/etc/X11/Xresources/x11-dpi
+`/etc/X11/Xresources/x11-dpi`
 
 ```
 Xft: 144
@@ -156,7 +154,7 @@ wget https://github.com/clockworkpi/uConsole/blob/master/Bin/uconsole.kbd.0.4_48
 apt install lightdm -y
 ```
 
-然后参考 [systemd#targets](../systemd#targets) 的部分来修改启动目标，设置为 `graphical.target` 图形启动目标：
+然后参考 [systemd#targets](../linux/systemd#targets) 的部分来修改启动目标，设置为 `graphical.target` 图形启动目标：
 
 ```bash
 systemctl set-default graphical.target

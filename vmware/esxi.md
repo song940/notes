@@ -19,7 +19,7 @@ VMWare ESXi 是 Type 1 虚拟化方案，区别于运行在操作系统之上的
 
 ### VMware ESX Command Line Interface
 
-[ESXi Cli](https://developer.vmware.com/web/tool/7.0/esxcli) 可以用于在不方便使用 Web UI 的场景管理 ESXi 服务器。
+[ESXi CLI](https://developer.vmware.com/web/tool/7.0/esxcli) 可以用于在不方便使用 Web UI 的场景管理 ESXi 服务器。
 
 https://developer.vmware.com/web/tool/7.0/esxcli
 
@@ -44,7 +44,7 @@ VMware ESXi 有专门针对服务器做优化的自定义镜像的版本
 
 ### FAQ
 
-***Cannot chsnge host configuration" when create datastore***
+***Cannot change host configuration when create datastore***
 
 在安装全新的硬盘后需要在启动时按下 「Ctrl-R」进入阵列卡设置，设置成 RAID-1 后，进入 VMware ESXi 中的 「Datastore」 时会遇到无法创建的情况，
 原因是磁盘没有创建分区表，找到磁盘的 `naa.xxxx` 并记录，打开 SSH 输入以下创建分区表：

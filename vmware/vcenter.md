@@ -75,7 +75,7 @@ service-control --restart applmgmt
 echo "Fixed the vCenter Server Reduced downtime upgrade"
 ```
 
-To resolve the issue, run the script "fix_rdu.sh" attached to this KB.
+To resolve the issue, run the script `fix_rdu.sh` attached to this KB.
 
 ```shell
 root@vmware-vcenter [ ~ ]# ./fix_rdu.sh

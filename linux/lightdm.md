@@ -16,9 +16,13 @@ apt install lightdm
 
 ## Configuration
 
+```shell
+lightdm --show-config
+```
+
 默认登录界面用户名输入框，我们可以修改配置将其改为用户下拉选择框：
 
-/usr/share/lightdm/lightdm.conf.d/01_debian.conf
+`/usr/share/lightdm/lightdm.conf.d/01_debian.conf`
 
 ```patch
 # Debian specific defaults
@@ -37,7 +41,7 @@ session-wrapper=/etc/X11/Xsession
 
 ### Autologin
 
-sudo nano /etc/lightdm/lightdm.conf.d/autologin.conf
+`/etc/lightdm/lightdm.conf.d/autologin.conf`
 
 ```ini
 [Seat:*]

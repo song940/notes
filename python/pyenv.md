@@ -1,7 +1,10 @@
 ---
 layout: default
 title: Python Env
+parent: Python
 ---
+
+# PyEnv
 
 ## Creating virtual environments
 
