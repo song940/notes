@@ -14,11 +14,11 @@ Clash 是一个功能全面的网络流量处理工具。
 
 为了实现流量的规则决策，需要接管流量。根据不同的协议，我们有以下方式：
 
-- [HTTP/HTTPS](http) 协议
-- [Socks5](socks5) 协议
+- [HTTP/HTTPS](network/http) 协议
+- [Socks5](network/socks5) 协议
 - Tproxy 协议
 - Redir 协议
-- [TUN](tun) 模式
+- [TUN](network/tun) 模式
 
 在传统方法中，我们需要确切知道哪些 IP 地址需要代理（黑名单）或不需要代理（白名单）。
 
