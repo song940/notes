@@ -102,11 +102,11 @@ xrandr --output DSI-1 --rotate right
 
 我们创建一个配置文件 `/etc/X11/xorg.conf.d/01-monitor.conf`
 
-```patch
-+ Section "Monitor"
-+   Identifier "DSI-1"
-+   Option "Rotate" "right"
-+ EndSection
+```
+Section "Monitor"
+  Identifier "DSI-1"
+  Option "Rotate" "right"
+EndSection
 ```
 
 这样就可以在 X11 层面设置屏幕方向了，对所有用户都生效，而无需单独配置。
