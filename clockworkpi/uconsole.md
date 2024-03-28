@@ -13,6 +13,8 @@ Clockwork Pi uConsole 可以选择不同的核心板
 + A06
 + R01
 
+## 
+
 ## Install
 
 我选择的 CM4 版本有两个系统，分别是基于 LXDE 和 XFCE
@@ -111,6 +113,12 @@ EndSection
 
 这样就可以在 X11 层面设置屏幕方向了，对所有用户都生效，而无需单独配置。
 
+/etc/X11/Xresources/x11-dpi
+
+```
+Xft: 144
+```
+
 ## Keyboard
 
 下载 uConsole 的 [Keyboard Flash Tool](https://github.com/clockworkpi/uConsole/raw/master/Bin/uconsole_keyboard_flash.tar.gz)
@@ -156,7 +164,7 @@ systemctl set-default graphical.target
 
 然后删除掉 `x11-autologin.service` ，重新启动就会启动到 lightdm 了。
 
-详细参考 [lightdm](../lightdm) 的部分。
+详细参考 [lightdm](../linux/lightdm) 的部分。
 
 ## Battery
 
