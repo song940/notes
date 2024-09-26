@@ -30,7 +30,7 @@ You can browse these files directly on GitHub, or clone the repository to your l
 您可以直接在 GitHub 上浏览这些文件，或者克隆仓库到本地进行查阅。
 
 ```shell
-git clone https://github.com/song940/notes
+git clone https://github.com/lsongdev/notes
 ```
 
 ## Contribution
@@ -40,5 +40,5 @@ If you have any suggestions or corrections, feel free to submit a Pull Request o
 
 ## License
 
-All files in this repository are under the MIT License (if applicable).
-本仓库下的所有文件均遵循 MIT 许可（如适用）。
+All files in this repository are under the CC BY-NC-SA 4.0 License (if applicable).
+本仓库下的所有文件均遵循 CC BY-NC-SA 4.0 许可（如适用）。

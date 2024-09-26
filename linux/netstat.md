@@ -8,6 +8,10 @@ parent: Linux
 
 netstat is a network utility for Unix-like operating systems such as Linux, macOS, and Windows.
 
+```shell
+netstat -nr
+```
+
 ## Statistics
 
 All connections on port 80 
