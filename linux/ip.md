@@ -1,6 +1,7 @@
 ---
 layout: default
 title: ip
+parent: Linux
 ---
 
 # ip
