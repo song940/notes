@@ -6,4 +6,4 @@ parent: macOS
 
 # route
 
-See [ip route](../linux/ip.md#ip-route)
+See [ip route](../linux/ip#ip-route)

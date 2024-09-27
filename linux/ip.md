@@ -9,7 +9,7 @@ ip is a command-line utility for networking.
 
 显示或操纵路由、设备、策略路由和隧道
 
-macOS 原生没有 `ip` 命令需要通过 [brew](../macOS/brew) 安装.
+macOS 原生没有 `ip` 命令需要通过 [brew](../macos/brew) 安装.
 
 ```shell
 brew install iproute2mac

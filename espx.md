@@ -1,6 +1,6 @@
 ---
 layout: default
-title: ESPx
+title: Espressif
 ---
 
 # ESP8266/32

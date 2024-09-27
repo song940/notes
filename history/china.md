@@ -1,9 +1,12 @@
 ---
 layout: default
-title: 中国历史朝代
+title: History of China
+parent: History
 ---
 
-# 中国历史朝代
+# History of China
+
+## 中国历史朝代
 
 <table>
   <thead>
