@@ -3,7 +3,7 @@ layout: default
 title: "Biologic"
 ---
 
-# Biologic
+# 生物学
 
 ## Cell
 
