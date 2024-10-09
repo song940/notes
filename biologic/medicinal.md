@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Medicinal
+parent: Biologic
 ---
 
 # Medicinal
