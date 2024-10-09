@@ -69,3 +69,4 @@ ollama run yi
 ```
 
 <https://github.com/ollama/ollama>
+<https://blog.inoki.cc/2024/04/16/Ollama-cn/>
