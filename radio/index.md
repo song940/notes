@@ -10,9 +10,19 @@ title: Radio
 <img alt="United States Frequency Allocations" src="https://www.transportation.gov/sites/dot.gov/files/pictures/2003-allochrt-05172017%200419PM.png" />
 </a>
 
+### [Nato Phonetic Alphabet](https://en.wikipedia.org/wiki/NATO_phonetic_alphabet)
+
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| alfa | bravo | charlie | delta | echo | foxtrot | golf |
+| hotel | india | juliett | kilo | lima | mike | november |
+| oscar | papa | quebec | romeo | sierra | tango | uniform |
+| victor | whisky | xray | yankee | zulu | | | 
+
 + [业余无线电题库](https://lsong.org/HAM)
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E7%9A%84%E4%B8%9A%E4%BD%99%E6%97%A0%E7%BA%BF%E7%94%B5%E6%89%A7%E7%85%A7%EF%BC%88%E4%B8%AA%E4%BA%BA%E6%99%AE%E9%80%9A%E4%B8%9A%E4%BD%99%E7%94%B5%E5%8F%B0%E6%89%A7%E7%85%A7%E5%BC%8F%E6%A0%B7%EF%BC%89.png/440px-%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E7%9A%84%E4%B8%9A%E4%BD%99%E6%97%A0%E7%BA%BF%E7%94%B5%E6%89%A7%E7%85%A7%EF%BC%88%E4%B8%AA%E4%BA%BA%E6%99%AE%E9%80%9A%E4%B8%9A%E4%BD%99%E7%94%B5%E5%8F%B0%E6%89%A7%E7%85%A7%E5%BC%8F%E6%A0%B7%EF%BC%89.png)
+
 
 > CQ, CQ, CQ, This is BI1GDD, Bravo India One Golf Delta Delta, BI1GDD calling CQ and standing by.
 

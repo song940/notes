@@ -26,6 +26,7 @@ slmgr /skms kms.v0v.bid && slmgr /ato
 + winget
 + powertoy
 + vscode
++ https://github.com/microsoft/sudo
 
 ## Write Protected
 
