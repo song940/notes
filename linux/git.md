@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Git
-# parent: Linux
+parent: Linux
 ---
 
 # Git

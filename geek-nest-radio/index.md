@@ -1,6 +1,7 @@
 ---
 layout: default
 title: GeekNest Radio
+parent: Radio
 ---
 
 # GeekNest Radio 极客巢全波段收音机（咕咕机）

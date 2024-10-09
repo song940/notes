@@ -1,6 +1,8 @@
 title: Lsong’s Notes
 description: Lsong’s Notes
 theme: just-the-docs
+math: katex
+mathjax: true
 
 url: https://notes.lsong.org
 
