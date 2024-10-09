@@ -3,6 +3,7 @@ description: Lsong’s Notes
 theme: just-the-docs
 math: mathjax
 mathjax: true
+latex: katex
 
 url: https://notes.lsong.org
 
@@ -12,3 +13,6 @@ aux_links:
   books: https://lsong.org/books
   music: https://lsong.org/music
   apps: https://lsong.org/apps.html
+
+compress_html:
+  blanklines: true
