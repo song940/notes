@@ -72,6 +72,17 @@ ESP-12S 在 ESP-12F 的基础上将 GPIO0、GPIO15、RST、EN 引脚进行了内
 
 实际上，NodeMCU 就是使用了 ESP-12E 作为核心的开发板。
 
+
+## Flash
+
+```shell
+esptool.py --port /dev/cu.usbserial-7152051CB6 write_flash 0x10000 ~/Downloads/m5stick-c-20240317.bin
+```
+
+<https://lsong.org/webesp>
+
+<https://docs.espressif.com/projects/esptool/en/latest/esp8266/esptool/basic-commands.html>
+
 ---
 
 ## 第一课：控制 LED 灯
@@ -150,14 +161,3 @@ void relay_close() {
 ### ESP_IR_TR
 
 ![](https://ae01.alicdn.com/kf/S7c37a1d55ab545909dca7446ff60997cZ/ESP8285-ESP-01M-IR-Transceiver-Wifi-Wireless-Module-Remote-Control-Switch-Development-Learning-Board-esp-8285.jpg_Q90.jpg_.webp)
-
-## esptools.py
-
-
-```shell
-esptool.py --port /dev/cu.usbserial-7152051CB6 write_flash 0x10000 ~/Downloads/m5stick-c-20240317.bin
-```
-
-<https://lsong.org/webesp>
-
-<https://docs.espressif.com/projects/esptool/en/latest/esp8266/esptool/basic-commands.html>
